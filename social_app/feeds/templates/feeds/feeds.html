@@ -1,0 +1,10 @@
+{% extends 'dashboard/base.html'%}
+
+{% block content %} 
+{% for post in object_list %}
+    {{post.text}}
+    {{post.user}}
+    {% endfor %}
+
+
+{% endblock content %}
