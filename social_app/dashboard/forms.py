@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm
 
 # Sign Up Form
 class SignUpForm(UserCreationForm):
@@ -16,3 +17,4 @@ class SignUpForm(UserCreationForm):
             'password1', 
             'password2', 
             ]
+

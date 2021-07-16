@@ -1,0 +1,13 @@
+{% extends 'dashboard/base.html'%}
+
+{% block content %} 
+<div class="shadow-lg p-3 mb-5 bg-white add_post">
+    <h1>New post</h1>
+    <form method="POST" enctype="multipart/form-data" class="form-group">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input style="margin-left: 74%;" class="btn btn-secondary" type="submit" value="Submit">
+    </form>
+</div>
+
+{% endblock content %}  

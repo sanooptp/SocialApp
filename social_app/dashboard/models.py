@@ -19,5 +19,3 @@ class UserDetail(models.Model):
 
     def __str__(self):
         return self.user.username
-    
-# comment for testing
